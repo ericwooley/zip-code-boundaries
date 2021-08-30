@@ -8,14 +8,13 @@
   "main": "index.js",
   "scripts": {
     "build": "node index.js && node-minify --compressor uglify-js --input 'dist/out.js' --output 'dist/out.js' && cp out.d.ts ./dist/out.d.ts",
-    "postinstall": "cat tl_2019_us_zcta510.tar.* | tar -xzvf - && mkdir dist 2>&1 > /dev/null"
+    "postinstall": "cat tl_2019_us_zcta510.tar.* | tar -xzvf - && rm -rf dist && mkdir dist 2>&1 > /dev/null",
+    "prepack": "npm run build"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "shapefile": "^0.6.6"
-  },
   "devDependencies": {
+    "shapefile": "^0.6.6",
     "@node-minify/cli": "^6.2.0",
     "@node-minify/uglify-js": "^6.2.0"
   }
