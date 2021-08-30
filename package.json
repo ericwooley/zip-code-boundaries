@@ -5,7 +5,8 @@
   ],
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "types": "dist/out.d.ts",
+  "main": "dist/out.js",
   "scripts": {
     "build": "node index.js && node-minify --compressor uglify-js --input 'dist/out.js' --output 'dist/out.js' && cp out.d.ts ./dist/out.d.ts",
     "postinstall": "cat tl_2019_us_zcta510.tar.* | tar -xzvf - && rm -rf dist && mkdir dist 2>&1 > /dev/null",
