@@ -11,7 +11,7 @@
     "postinstall": "cat tl_2019_us_zcta510.tar.* | tar -xzvf - && rm -rf dist && mkdir dist 2>&1 > /dev/null",
     "prepack": "npm run build"
   },
-  "author": "",
+  "author": "Eric Wooley <ericwooley@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "shapefile": "^0.6.6",
