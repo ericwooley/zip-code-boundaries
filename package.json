@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node index.js && node-minify --compressor uglify-js --input 'dist/out.js' --output 'dist/out.js' && cp out.d.ts ./dist/out.d.ts",
-    "postinstall": "cat tl_2019_us_zcta510.tar.* | tar -xzvf -"
+    "postinstall": "cat tl_2019_us_zcta510.tar.* | tar -xzvf - && mkdir dist 2>&1 > /dev/null"
   },
   "author": "",
   "license": "ISC",
