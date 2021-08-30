@@ -1,0 +1,19 @@
+{
+  "name": "seeds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js && node-minify --compressor uglify-js --input 'dist/out.js' --output 'dist/out.js' && cp out.d.ts ./dist/out.d.ts",
+    "postinstall": "cat tl_2019_us_zcta510.tar.* | tar -xzvf -"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shapefile": "^0.6.6"
+  },
+  "devDependencies": {
+    "@node-minify/cli": "^6.2.0",
+    "@node-minify/uglify-js": "^6.2.0"
+  }
+}
