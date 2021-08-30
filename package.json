@@ -1,5 +1,8 @@
 {
   "name": "zip-code-boundaries",
+  "files": [
+    "dist"
+  ],
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
