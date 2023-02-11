@@ -16,7 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "shapefile": "^0.6.6",
-    "@node-minify/cli": "^6.2.0",
+    "@node-minify/cli": "^7.1.0",
     "@node-minify/uglify-js": "^6.2.0"
   }
 }
